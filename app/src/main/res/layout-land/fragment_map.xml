@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="lok"
+            type="com.example.covidvaccine.GradData" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        tools:context=".MapFragment">
+
+        <LinearLayout
+            android:layout_width="713dp"
+            android:layout_height="310dp"
+
+
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/user_list_recycler_view"
+                android:layout_width="700dp"
+                android:layout_height="500dp"
+                android:layout_weight="50">
+
+                <Spinner
+                    android:id="@+id/spinner_town"
+                    android:layout_width="170dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white"
+                    android:entries="@array/towns"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.081"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="163dp"
+                    android:layout_height="134dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/ic_baseline_maps"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/radnoVrijeme"
+                    android:layout_width="193dp"
+                    android:layout_height="217dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="320dp"
+                    android:layout_marginRight="320dp"
+                    android:hint="@string/loki"
+                    android:text="@={lok.info}"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/map_container"
+                    android:layout_width="300dp"
+                    android:layout_height="326dp"
+                    android:layout_marginStart="4dp"
+
+
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/sarajevo_lokacija"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radnoVrijeme"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
+
+
+
+

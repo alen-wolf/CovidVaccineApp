@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:clickable="true"
+    android:focusable="true"
+
+    tools:context=".Pitanje7Fragment">
+
+    <RelativeLayout
+        android:layout_width="744dp"
+        android:layout_height="294dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="255dp"
+            android:layout_height="205dp"
+            android:contentDescription="@string/todo"
+            android:padding="19dp"
+
+            android:src="@drawable/prr" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+
+
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginRight="135dp"
+            android:text="Da li imate/ste imali Covid-19"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/daAnswer3"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="273dp"
+            android:layout_marginLeft="273dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="-122dp"
+            android:layout_marginRight="-122dp"
+            android:layout_marginBottom="179dp"
+            android:text="Da imam trenutno"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/preb1"
+            android:layout_width="465dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="274dp"
+            android:layout_marginLeft="274dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="125dp"
+            android:text="Prebolio sam koronu prije MANJE od 3 mjeseca"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/preb2"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="273dp"
+            android:layout_marginLeft="273dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="-139dp"
+            android:layout_marginRight="-139dp"
+            android:layout_marginBottom="77dp"
+            android:text="Prebolio sam koronu prije VISE od 3 mjeseca"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/nista2"
+            android:layout_width="396dp"
+            android:layout_height="68dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginRight="83dp"
+            android:layout_marginBottom="4dp"
+            android:text="Nisam nikad imao Covid-19"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

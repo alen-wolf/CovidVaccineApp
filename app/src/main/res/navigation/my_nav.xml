@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.covidvaccine.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_log_in"
+            app:destination="@id/log_in"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_log_in2"
+            app:destination="@id/log_in2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/log_in"
+        android:name="com.example.covidvaccine.Log_in"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_log_in_to_aboutCovid"
+            app:destination="@id/aboutCovid"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutCovid"
+        android:name="com.example.covidvaccine.AboutCovid"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_about_covid">
+        <action
+            android:id="@+id/action_aboutCovid_to_pitanje1Fragment"
+            app:destination="@id/pitanje1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalInfoUser2"
+        android:name="com.example.covidvaccine.FinalInfoUser"
+        android:label="Korisnicki Info"
+        tools:layout="@layout/fragment_final_info_user">
+        <action
+            android:id="@+id/action_finalInfoUser2_to_info2"
+            app:destination="@id/info2"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top" />
+        <action
+            android:id="@+id/action_finalInfoUser2_to_blankCovid"
+            app:destination="@id/blankCovid"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_finalInfoUser2_to_cantTakeVaccine"
+            app:destination="@id/cantTakeVaccine"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_finalInfoUser2_to_log_in2"
+            app:destination="@id/log_in2"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/log_in2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_finalInfoUser2_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top" />
+        <action
+            android:id="@+id/action_finalInfoUser2_to_canTakeVaccine"
+            app:destination="@id/canTakeVaccine"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/info2"
+        android:name="com.example.covidvaccine.Info2"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_info2"/>
+    <fragment
+        android:id="@+id/blankCovid"
+        android:name="com.example.covidvaccine.BlankCovid"
+        android:label="Jos jedan korak do boljeg zdravlja"
+        tools:layout="@layout/fragment_blank_covid">
+        <action
+            android:id="@+id/action_blankCovid_to_canTakeVaccine"
+            app:destination="@id/canTakeVaccine"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/finalInfoUser2"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/canTakeVaccine"
+        android:name="com.example.covidvaccine.CanTakeVaccine"
+        android:label="Cestitamo!"
+        tools:layout="@layout/fragment_can_take_vaccine" />
+    <fragment
+        android:id="@+id/log_in2"
+        android:name="com.example.covidvaccine.log_in2"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_log_in2">
+        <action
+            android:id="@+id/action_log_in2_to_finalInfoUser2"
+            app:destination="@id/finalInfoUser2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_log_in2_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cantTakeVaccine"
+        android:name="com.example.covidvaccine.CantTakeVaccine"
+        android:label="Zao nam je"
+        tools:layout="@layout/fragment_cant_take_vaccine" />
+    <fragment
+        android:id="@+id/pitanje1Fragment"
+        android:name="com.example.covidvaccine.Pitanje1Fragment"
+        android:label="User info"
+        tools:layout="@layout/fragment_pitanje1">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pitanje1Fragment_to_pitanje2Fragment"
+            app:destination="@id/pitanje2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje2Fragment"
+        android:name="com.example.covidvaccine.Pitanje2Fragment"
+        android:label="Godiste "
+        tools:layout="@layout/fragment_pitanje2">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pitanje2Fragment_to_pitanje3Fragment"
+            app:destination="@id/pitanje3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje3Fragment"
+        android:name="com.example.covidvaccine.Pitanje3Fragment"
+        android:label="Pitanje 1"
+        tools:layout="@layout/fragment_pitanje3">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pitanje3Fragment_to_pitanje4Fragment"
+            app:destination="@id/pitanje4Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje4Fragment"
+        android:name="com.example.covidvaccine.Pitanje4Fragment"
+        android:label="Pitanje 2"
+        tools:layout="@layout/fragment_pitanje4">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pitanje4Fragment_to_pitanje5Fragment"
+            app:destination="@id/pitanje5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje5Fragment"
+        android:name="com.example.covidvaccine.Pitanje5Fragment"
+        android:label="Pitanje 3"
+        tools:layout="@layout/fragment_pitanje5">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="string" />
+        <argument
+            android:name="priority"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pitanje5Fragment_to_pitanje6Fragment"
+            app:destination="@id/pitanje6Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje6Fragment"
+        android:name="com.example.covidvaccine.Pitanje6Fragment"
+        android:label="Pitanje 4"
+        tools:layout="@layout/fragment_pitanje6">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="string" />
+        <argument
+            android:name="priority"
+            app:argType="string" />
+        <argument
+            android:name="HIV"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pitanje6Fragment_to_pitanje7Fragment"
+            app:destination="@id/pitanje7Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje7Fragment"
+        android:name="com.example.covidvaccine.Pitanje7Fragment"
+        android:label="Pitanje 5"
+        tools:layout="@layout/fragment_pitanje7">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="string" />
+        <argument
+            android:name="priority"
+            app:argType="string" />
+        <argument
+            android:name="HIV"
+            app:argType="string" />
+        <argument
+            android:name="immuneSis"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_pitanje7Fragment_to_finalInfoUser2"
+            app:destination="@id/finalInfoUser2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.covidvaccine.MapFragment"
+        android:label="Lokacije" />
+</navigation>

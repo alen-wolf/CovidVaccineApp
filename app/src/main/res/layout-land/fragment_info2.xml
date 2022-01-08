@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clipChildren="true"
+
+    tools:context=".Info2">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="301dp"
+        android:layout_height="275dp"
+        android:src="@drawable/aboutcovid" />
+
+    <TextView
+        android:id="@+id/coronaText"
+        android:layout_width="355dp"
+
+        android:layout_height="288dp"
+
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:padding="5dp"
+        android:text="@string/aboutCovid"
+        android:textSize="15sp"
+        android:translationX="350dp" />
+
+
+</FrameLayout>

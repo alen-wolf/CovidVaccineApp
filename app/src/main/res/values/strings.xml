@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">CovidVaccine</string>
+    <string name="first_main_contet">Dobro dosli!</string>
+    <string name="btn">Start</string>
+    <string name="logIn">Sing up</string>
+    <string name="logIn2">Sing in</string>
+    <string name="location">Location</string>
+    <string name="userName">Please write your Username:</string>
+    <string name="password">Please write your password:</string>
+    <string name="aboutCovid">Koronavirusna bolest 2019, skraćeno: COVID-19, virusna je bolest uzrokovana novim koronavirusom SARS-CoV-2.
+        Bolest je prvi put službeno potvrđena tijekom novembra 2019. u gradu Wuhanu, pokrajine Hubei, Kina,
+        dok je prvi slučaj oboljenja zabilježen 17. studenoga 2019.<br/> Povodom brzog širenja ove bolesti Svjetska
+        zdravstvena organizacija proglasila je pandemiju.
+        Zabilježene su zaraze diljem zapadnog svijeta i Azijsko-pacifičkog oceana, uglavnom ljudi iz Kine,
+        a kasnije se bolest širila diljem Europe.</string>
+    <string name="aboutCovidEng">Coronavirus disease 2019, abbreviation: COVID-19, is a virus caused by the new coronavirus SARS-CoV-2.
+        Official first recordings of the disease can be traced back to the 17th of November 2019. in the Chinese City of Wuhan, province Hubei. <br/>
+        Due to the fast spread of the virus, officials of the World Health Organization (abv: WHO) on March 11 declared the virus outbreak a global pandemic.
+        infected cases were starting to pop up in the western world and the Asia-pacific region, although the majority was from China. <br/>The disease later spread across the European continent</string>
+    <string name="cpassword">Please confrim your password:</string>
+    <string name="testcontrol">Zelite se vakcinisati, spremni ste na taj nacin zastiti sebe i ostale </string>
+    <string name="testcontrolEng">Want to get vaccinated? <br/> Are you ready to protect yourself and others? </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Unesite vase ime i prezime:</string>
+    <string name="fq">Unesite broj vasih godina:</string>
+    <string name="btn_next">NEXT</string>
+    <string name="prioritet">Da li spadate u skupinu prioretni osoba?</string>
+    <string name="god65">Stariji ste od 65 god</string>
+    <string name="hronic">Hronicni ste bolesnik</string>
+    <string name="med_rad">Medicinski ste radnik</string>
+    <string name="sport">Sportas kontaktnog sporta?</string>
+    <string name="stopvaccine">Da li trenutno postoji prepreka u dobijanju vakcine? </string>
+    <string name="babycoming">Trudna ste?</string>
+    <string name="simptomi">Imate simptome covida19 ili trenutno bolujete covid</string>
+    <string name="cancer">Imate rak?</string>
+    <string name="info">Info</string>
+    <string name="log_out">Log out</string>
+    <string name="todo">TODO</string>
+    <string name="izbor_vakcine">Kako u vašem slučaju ne postoji prepreka u dobivanju vakcine izaberite kojom se vakcinom zelite vakcinisati:</string>
+    <string name="izaberi">Izaberi jednu od vakcina:</string>
+    <string name="canttakevaccine">Nazalost postoje prepreke u vasem vakcinisanju, svakako savjetujemo vam da ostanete kuci i pazite na svoje zdravlje</string>
+    <string name="share">Share</string>
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="ikona_usera">ikona_usera</string>
+    <string name="vas_datum">"vaš datum"</string>
+    <string name="izaberite_vas_datum_rodjenja">Izaberite vaš datum rođenja</string>
+    <string name="next">Naprijed</string>
+    <string name="unesite_vase_ime_i_prezime">Unesite vase Ime i Prezime</string>
+    <string name="prezime">PREZIME</string>
+    <string name="ime">IME</string>
+    <string name="loki">Lokacija 1: Vrazova <br/> Radno vrijeme od 9 do 13 <br/> <br/> Lokacija 2: Vojna Bolnica <br/> Radno vrijeme od 11 do 14 <br/> <br/> Lokacija 3: KUM <br/> Radno vrijeme od 9 do 20</string>
+    <string name="ba">BA</string>
+    <string name="naprijed">Naprijed</string>
+    <string name="naprijedEng">Next</string>
+
+    <string-array name="vaccine">
+        <item>Astra Zeneca</item>
+        <item>Phizer</item>
+        <item>Sputnik</item>
+        <item>Moderna</item>
+        <item>BioNTech</item>
+    </string-array>
+    <string-array name="towns">
+        <item>Sarajevo</item>
+        <item>Mostar</item>
+        <item>Banja Luka</item>
+    </string-array>
+</resources>

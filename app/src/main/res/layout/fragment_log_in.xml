@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:clickable="true"
+    android:focusable="true"
+
+    android:id="@+id/log_In"
+    tools:context=".Log_in">
+<RelativeLayout
+    android:layout_width="377dp"
+    android:layout_height="450dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logIn"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:drawableLeft="@drawable/ic_baseline_group_24"
+
+        android:hint="@string/userName"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/ic_baseline_group_24" />
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="220dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/ic_baseline_lock_24" />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="300dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+
+
+        android:hint="@string/cpassword"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/ic_baseline_lock_24" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+
+        android:id="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"/>
+</RelativeLayout>
+</RelativeLayout>

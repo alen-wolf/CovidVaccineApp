@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutCovid"
+    android:id="@+id/AboutCovid"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="243dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/aboutcovid" />
+
+    <TextView
+        android:id="@+id/aboutCoronaText"
+        android:layout_width="500dp"
+        android:layout_height="399dp"
+        android:layout_marginTop="250dp"
+
+
+        android:gravity="center_horizontal"
+        android:text="@string/aboutCovid"
+        android:textAlignment="center"
+        android:textSize="14sp"
+
+
+        android:translationX="14dp"
+        android:translationY="-220dp" />
+
+    <TextView
+        android:id="@+id/zelText"
+        android:layout_width="486dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="520dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/testcontrol"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+
+        android:translationX="-500dp"
+
+
+        android:translationY="-320dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="125dp"
+        android:layout_marginTop="600dp"
+        android:text="@string/next"
+
+        android:translationX="-920dp"
+        android:translationY="270dp" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:clickable="true"
+    android:focusable="true"
+
+    tools:context=".log_in2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/logIn2"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+
+            />
+
+        <EditText
+            android:id="@+id/userLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:drawableStart="@drawable/ic_baseline_group_24"
+            android:drawableLeft="@drawable/ic_baseline_group_24"
+            android:hint="@string/userName"
+
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/passLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:text="Log in" />
+
+        <TextView
+            android:id="@+id/deleteUser"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="262dp"
+            android:layout_marginRight="262dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:text="DELETE OLD USER ACCOUNT"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="19sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</RelativeLayout>

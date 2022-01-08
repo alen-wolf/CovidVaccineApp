@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/pitanje1Fragment"
+    tools:context=".Pitanje1Fragment">
+
+    <RelativeLayout
+        android:layout_width="800dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="304dp"
+            android:layout_height="282dp"
+            android:contentDescription="@string/ikona_usera"
+            android:padding="19dp"
+            android:src="@drawable/slikazapitanja"
+
+
+            />
+
+        <TextView
+            android:layout_width="536dp"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginStart="301dp"
+            android:layout_marginLeft="301dp"
+
+            android:layout_marginEnd="-37dp"
+            android:layout_marginRight="-37dp"
+            android:text="@string/unesite_vase_ime_i_prezime"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonStartQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="265dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/next"
+            android:translationX="120dp" />
+
+        <EditText
+            android:id="@+id/EditQ1Ime"
+            android:layout_width="391dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginStart="356dp"
+            android:layout_marginLeft="356dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:layout_marginBottom="200dp"
+            android:background="@color/blue"
+            android:hint="@string/ime"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditQ2Prezime"
+            android:layout_width="395dp"
+            android:layout_height="71dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginStart="361dp"
+            android:layout_marginLeft="361dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="98dp"
+            android:background="@color/blue"
+            android:hint="@string/prezime"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

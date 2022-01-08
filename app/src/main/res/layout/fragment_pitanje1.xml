@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/pitanje1Fragment"
+    tools:context=".Pitanje1Fragment">
+
+    <RelativeLayout
+        android:layout_width="377dp"
+        android:layout_height="600dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:padding="19dp"
+            android:src="@drawable/slikazapitanja"
+            android:contentDescription="@string/ikona_usera" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/unesite_vase_ime_i_prezime"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonStartQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:text="@string/next" />
+
+        <EditText
+            android:id="@+id/EditQ1Ime"
+            android:layout_width="277dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="190dp"
+            android:background="@color/blue"
+            android:hint="@string/ime"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditQ2Prezime"
+            android:layout_width="280dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="115dp"
+            android:hint="@string/prezime"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

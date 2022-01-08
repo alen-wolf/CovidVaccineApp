@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".Pitanje2Fragment">
+
+    <RelativeLayout
+        android:layout_width="377dp"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="356dp"
+            android:layout_height="185dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="69dp"
+            android:padding="19dp"
+            android:src="@drawable/calendar_asset" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="@string/izaberite_vas_datum_rodjenja"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_dateQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginRight="135dp"
+            android:layout_marginBottom="11dp"
+            android:text="Potvrdi" />
+
+        <DatePicker
+            android:id="@+id/calendarView"
+            android:layout_width="332dp"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginBottom="110dp"
+            android:background="#85FFFFFF"
+            android:calendarTextColor="@color/blue"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            tools:targetApi="lollipop" />
+
+    </RelativeLayout>
+</RelativeLayout>
